@@ -1,0 +1,23 @@
+.header {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 100vh;
+  &__box {
+    max-width: 574px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 23%;
+    margin-bottom: 95px;
+  }
+  &__title {
+    @include text($H700, 400, $text-white-color);
+    text-align: center;
+  }
+}
