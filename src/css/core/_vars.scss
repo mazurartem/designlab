@@ -1,0 +1,31 @@
+// color //
+$btn-color: black;
+$text-black-color: black;
+$text-white-color: white;
+
+$max-width: 1920px;
+
+// text //
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+$H700: calcRem(54px);
+$H600: calcRem(34px);
+$H500: calcRem(30px);
+$H400: calcRem(20px);
+$H300: calcRem(16px);
+$H200: calcRem(15px);
+$H100: calcRem(14px);
+
+$base-font: "Lato";
+
+// screen //
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;
