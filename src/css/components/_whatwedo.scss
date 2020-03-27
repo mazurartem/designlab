@@ -1,0 +1,31 @@
+.what-we-do {
+  @extend %container;
+  &__container {
+    @extend %padding-container;
+  }
+  &__box {
+    @extend %box;
+  }
+  &__border {
+    @include text($H600, 700, $text-black-color);
+    padding-top: 65px;
+    border: 2px solid $border-black-color;
+  }
+  &__picture {
+    margin-bottom: 45px;
+  }
+  &__picture-wrapper {
+    @extend %flex-center;
+  }
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+    @include text($H400, 700, $text-black-color);
+  }
+  &__text {
+    margin-bottom: 100px;
+    text-align: center;
+    @include text($H100, 300, $text-black-color);
+    line-height: 26px;
+  }
+}

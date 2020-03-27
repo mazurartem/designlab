@@ -1,0 +1,26 @@
+.about {
+  @extend %container;
+  &__container {
+    @extend %padding-container;
+  }
+  &__box {
+    @extend %box;
+  }
+  &__border {
+    @include text($H600, 700, $text-black-color);
+    padding-top: 65px;
+    border: 2px solid $border-black-color;
+  }
+  &__text-first {
+    @include text($H300, 400, $text-black-color);
+    text-align: center;
+    margin-bottom: 34px;
+    line-height: 24px;
+  }
+  &__text-second {
+    @include text($H300, 400, $text-black-color);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+}

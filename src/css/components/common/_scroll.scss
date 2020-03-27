@@ -1,0 +1,30 @@
+.scroll {
+  width: 24px;
+  height: 40px;
+  position: relative;
+  border: 2px solid $text-white-color;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    &:after {
+      transform: translateY(8px);
+    }
+  }
+  &:active {
+    &:after {
+      transform: translateY(16px);
+    }
+  }
+  &:after {
+    transition: all 0.2s ease;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: $text-white-color;
+    position: absolute;
+    transform: translateY(8px);
+  }
+}

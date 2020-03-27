@@ -1,0 +1,27 @@
+.services {
+  @extend %container;
+  background-image: url(../images/services.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &__container {
+    @extend %padding-container;
+  }
+  &__box {
+    @extend %box;
+  }
+  &__border {
+    @include text($H600, 700, $text-black-color);
+    padding-top: 65px;
+    border: 2px solid $border-white-color;
+    color: $bg-white-color;
+  }
+  &__text {
+    @include text($H300, 400, $text-black-color);
+    text-align: center;
+    margin-bottom: 34px;
+    color: $bg-white-color;
+    line-height: 24px;
+  }
+}

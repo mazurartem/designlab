@@ -2,3 +2,17 @@
   max-width: $max-width;
   margin: 0 auto;
 }
+
+%padding-container {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+%box {
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
