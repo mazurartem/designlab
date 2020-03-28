@@ -1,0 +1,52 @@
+.footer {
+  @extend %container;
+  &__container {
+    padding-top: 160px;
+    padding-bottom: 65px;
+  }
+  &__box {
+    @extend %box;
+  }
+  &__border {
+    @include text($H600, 700, $text-black-color);
+    padding-top: 65px;
+    border: 2px solid $border-black-color;
+    margin-bottom: 60px;
+  }
+  &__text {
+    margin-bottom: 46px;
+    text-align: center;
+    @include text($H300, 400, $text-black-color);
+    line-height: 26px;
+  }
+  &__container-button {
+    @extend %flex-center;
+    width: 42%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+  &__button {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    padding: 12px 24px;
+    @include text($H300, 300, $text-white-color);
+    color: $text-white-color;
+    background-color: $bg-btn-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  &__box-end {
+    display: flex;
+    justify-content: center;
+  }
+  &__image-wrapper {
+    margin-right: 35px;
+  }
+  &__text-end {
+    @include text($H100, 700, $text-black-color);
+  }
+}
