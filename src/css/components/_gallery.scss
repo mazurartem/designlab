@@ -1,7 +1,5 @@
 .gallery {
   @extend %container;
-  &__container-wrapper {
-  }
   &__container {
     display: grid;
     grid-template-columns: 1fr 1.4fr 1fr;
