@@ -12,8 +12,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img1:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: translateX(10px);
   }
   &__img2 {
@@ -22,8 +21,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img2:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: scale(1.035);
   }
   &__img3 {
@@ -32,8 +30,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img3:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: translateX(-10px);
   }
   &__img4 {
@@ -42,8 +39,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img4:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: translateX(10px);
   }
   &__img5 {
@@ -52,8 +48,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img5:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: scale(1.035);
     z-index: 1;
   }
@@ -63,8 +58,7 @@
     @include text($H600, 700, $text-white-color);
   }
   &__img6:hover {
-    cursor: pointer;
-    transition: 1s;
+    @extend %img-hover;
     transform: translateX(-10px);
   }
 }
