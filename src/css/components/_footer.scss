@@ -1,7 +1,11 @@
 .footer {
   &__container {
-    padding-top: 160px;
-    padding-bottom: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media screen and (min-width: $screen-desktop) {
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
   }
   &__box {
     @extend %box;

@@ -1,6 +1,10 @@
 .about {
   &__container {
     @extend %padding-container;
+    @media screen and (min-width: $screen-desktop) {
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
   }
   &__box {
     @extend %box;
