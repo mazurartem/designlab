@@ -1,32 +1,54 @@
 .footer {
   &__container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @extend %padding-container;
     @media screen and (min-width: $screen-desktop) {
-      padding-top: 160px;
-      padding-bottom: 160px;
+      padding-top: 134px;
+      padding-bottom: 65px;
     }
   }
   &__box {
     @extend %box;
   }
   &__border {
-    @include text($H600, 700, $text-black-color);
-    padding-top: 65px;
+    @include text($H350, 700, $text-black-color);
+    padding-top: 24px;
     border: 2px solid $border-black-color;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H600, 700, $text-black-color);
+    }
+    @media screen and (min-width: $screen-desktop) {
+      @include text($H600, 700, $text-black-color);
+      padding-top: 65px;
+      margin-bottom: 60px;
+    }
   }
   &__text {
-    margin-bottom: 46px;
+    max-width: 545px;
+    margin: 0 auto;
     text-align: center;
     @include text($H300, 400, $text-black-color);
     line-height: 26px;
+    @extend %text-padding-lrb;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 34px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 46px;
+    }
   }
   &__container-button {
     @extend %flex-center;
-    width: 42%;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $screen-tablet) {
+      width: 42%;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 48px;
+    }
   }
   &__button {
     border: none;
@@ -50,6 +72,9 @@
     margin-right: 35px;
   }
   &__text-end {
-    @include text($H100, 700, $text-black-color);
+    @include text($H50, 700, $text-black-color);
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H50, 700, $text-black-color);
+    }
   }
 }

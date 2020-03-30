@@ -10,25 +10,43 @@
     @extend %box;
   }
   &__border {
-    @include text($H600, 700, $text-black-color);
-    padding-top: 65px;
+    @include text($H350, 700, $text-black-color);
+    padding-top: 24px;
     border: 2px solid $border-black-color;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H600, 700, $text-black-color);
+      padding-top: 65px;
+    }
   }
   &__picture {
-    margin-bottom: 45px;
+    margin-bottom: 12px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 45px;
+    }
   }
   &__picture-wrapper {
     @extend %flex-center;
   }
   &__title {
-    margin-bottom: 45px;
+    margin-bottom: 4px;
     text-align: center;
     @include text($H400, 700, $text-black-color);
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 45px;
+    }
   }
   &__text {
-    margin-bottom: 100px;
+    max-width: 545px;
+    margin: 0 auto;
     text-align: center;
     @include text($H100, 300, $text-black-color);
     line-height: 26px;
+    @extend %text-padding-lrb;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 100px;
+    }
   }
 }

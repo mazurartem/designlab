@@ -6,30 +6,17 @@
 
   &__container {
     display: grid;
-    grid-template-columns: minmax(50px, 1300px) minmax(100px, 3000px) minmax(
-        50px,
-        1300px
-      );
+    grid-template-columns: minmax(50px, 1300px);
     grid-auto-rows: minmax(1fr, 1fr);
     grid-gap: 10px;
-
-    @media screen and (min-width: $screen-iphone) {
-      display: grid;
-      grid-template-columns: minmax(50px, 1300px);
-      grid-auto-rows: minmax(1fr, 1fr);
-      grid-gap: 10px;
-    }
-
     @media screen and (min-width: $screen-iphone-plus) {
       display: grid;
       grid-template-columns: minmax(50px, 1300px) minmax(50px, 1300px);
       grid-auto-rows: minmax(1fr, 1fr);
       grid-gap: 10px;
     }
-
     @media screen and (min-width: $screen-tablet) {
       display: grid;
-
       grid-template-columns: minmax(50px, 1300px) minmax(100px, 3000px) minmax(
           50px,
           1300px

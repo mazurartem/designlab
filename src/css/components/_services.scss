@@ -15,16 +15,28 @@
     @extend %box;
   }
   &__border {
-    @include text($H600, 700, $text-black-color);
-    padding-top: 65px;
+    @include text($H350, 700, $text-white-color);
+    padding-top: 24px;
     border: 2px solid $border-white-color;
     color: $bg-white-color;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H600, 700, $text-white-color);
+    }
+    @media screen and (min-width: $screen-desktop) {
+      @include text($H600, 700, $text-white-color);
+      padding-top: 65px;
+    }
   }
   &__text {
     @include text($H300, 400, $text-black-color);
+    max-width: 545px;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 34px;
     color: $bg-white-color;
     line-height: 24px;
+    @extend %text-padding-lrb;
+    @media screen and (min-width: $screen-tablet) {
+      padding-bottom: 34px;
+    }
   }
 }
