@@ -26,7 +26,7 @@
     }
   }
   &__img1 {
-    background-image: url(../images/topworkz.png);
+    background-image: url(images/topworkz.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
@@ -42,7 +42,7 @@
     transform: translateX(10px);
   }
   &__img2 {
-    background-image: url(../images/joint.png);
+    background-image: url(images/joint.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
@@ -58,7 +58,7 @@
     transform: scale(1.035);
   }
   &__img3 {
-    background-image: url(../images/market.png);
+    background-image: url(images/market.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
@@ -74,7 +74,7 @@
     transform: translateX(-10px);
   }
   &__img4 {
-    background-image: url(../images/worktop.png);
+    background-image: url(images/worktop.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
@@ -90,7 +90,7 @@
     transform: translateX(10px);
   }
   &__img5 {
-    background-image: url(../images/lable.png);
+    background-image: url(images/lable.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
@@ -107,7 +107,7 @@
     z-index: 1;
   }
   &__img6 {
-    background-image: url(../images/kyiv.png);
+    background-image: url(images/kyiv.png);
     @extend %img-setting;
     @include text($H350, 700, $text-white-color);
     @media screen and (min-width: $screen-tablet) {
