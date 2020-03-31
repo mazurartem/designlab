@@ -50,7 +50,11 @@
     }
   }
   &__border-title {
-    padding-left: 70px;
-    padding-right: 74px;
+    padding-left: 15px;
+    padding-right: 19px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-left: 70px;
+      padding-right: 74px;
+    }
   }
 }

@@ -49,8 +49,11 @@
     }
   }
   &__text-title {
-    display: block;
-    padding-left: 105px;
-    padding-right: 107px;
+    padding-left: 25px;
+    padding-right: 27px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-left: 105px;
+      padding-right: 107px;
+    }
   }
 }
