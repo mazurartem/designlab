@@ -27,6 +27,9 @@
       padding-top: 65px;
     }
   }
+  &__legend-align {
+    text-align: center;
+  }
   &__text {
     @include text($H300, 400, $text-black-color);
     max-width: 545px;

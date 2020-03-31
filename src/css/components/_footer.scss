@@ -37,6 +37,9 @@
       margin-bottom: 46px;
     }
   }
+  &__legend-align {
+    text-align: center;
+  }
   &__container-button {
     @extend %flex-center;
     width: 100%;

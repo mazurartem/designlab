@@ -18,6 +18,9 @@
       padding-top: 65px;
     }
   }
+  &__legend-align {
+    text-align: center;
+  }
   &__picture {
     margin-bottom: 12px;
     @media screen and (min-width: $screen-tablet) {

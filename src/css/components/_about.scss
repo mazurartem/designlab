@@ -21,6 +21,9 @@
       padding-top: 65px;
     }
   }
+  &__legend-align {
+    text-align: center;
+  }
   &__text-first {
     @include text($H300, 400, $text-black-color);
     text-align: center;
