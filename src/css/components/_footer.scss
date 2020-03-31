@@ -77,4 +77,8 @@
       @include text($H50, 700, $text-black-color);
     }
   }
+  &__text-title {
+    padding-left: 100px;
+    padding-right: 93px;
+  }
 }
